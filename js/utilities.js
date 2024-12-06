@@ -19,3 +19,10 @@ div.innerHTML = `
 `
 document.getElementById('transaction-id').appendChild(div);
 }
+
+function openPopUp(){
+    popup.classList.add('open-popup');
+}
+function closePopUp(){
+    popup.classList.remove('open-popup');
+}

@@ -9,6 +9,8 @@
 // //     window.location.href = "/";
 // //   });
 
+let popup = document.getElementById('popup');
+
 
 document.getElementById('switch-history').addEventListener("click",()=>{
     document.getElementById('switch-donation').style.backgroundColor="lightGrey"
@@ -36,8 +38,15 @@ document.getElementById("donate-nhk").addEventListener("click", (event) => {
     return;
   }
 
+  if(isNaN(donateAmount)){
+    alert("Please enter valid amount..!");
+    return;
+  }
+
   const newBalance = totalBalance - donateAmount; 
   const newFund = fundBalance + donateAmount;
+
+  openPopUp();
 
   document.getElementById('total-balance').innerHTML = `
    <button id="total-balance" class="btn"><img src="assets/coin.png" alt="">${newBalance} BDT</button>
@@ -59,8 +68,15 @@ document.getElementById("donate-feni").addEventListener("click", (event) => {
     return;
   }
 
+  if(isNaN(donateAmount)){
+    alert("Please enter valid amount..!");
+    return;
+  }
+
   const newBalance = totalBalance - donateAmount; 
   const newFund = fundBalance + donateAmount;
+
+  openPopUp();
 
   document.getElementById('total-balance').innerHTML = `
    <button id="total-balance" class="btn"><img src="assets/coin.png" alt="">${newBalance} BDT</button>
@@ -82,8 +98,16 @@ document.getElementById("donate-quota").addEventListener("click", (event) => {
     return;
   }
 
+  if(isNaN(donateAmount)){
+    alert("Please enter valid amount..!");
+    return;
+  }
+
   const newBalance = totalBalance - donateAmount; 
   const newFund = fundBalance + donateAmount;
+
+
+  openPopUp();
 
   document.getElementById('total-balance').innerHTML = `
    <button id="total-balance" class="btn"><img src="assets/coin.png" alt="">${newBalance} BDT</button>

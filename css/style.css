@@ -1,0 +1,12 @@
+.footer {
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+    height: 100px;/* or however high you would like */
+}
+.transaction{
+    border: 1px solid rgb(229, 223, 223);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}

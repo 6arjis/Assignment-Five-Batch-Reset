@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donation Bangladesh</title>
-
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
       rel="stylesheet"
@@ -12,8 +12,144 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Donation Bangladesh</h1>
-    <script src=""></script>
+  <body class="min-h-screen flex flex-col">
+    <nav class="sticky top-0 backdrop-filter backdrop-blur">
+      <section style="background-color: beige" class="">
+        <div class="max-w-screen-xl mx-auto navbar">
+          <div class="navbar-start">
+            <button
+              id="btn-switch-blog"
+              style="background-color: greenyellow"
+              class="btn"
+            >
+              Blog
+            </button>
+          </div>
+          <div class="navbar-center gap-3">
+            <img src="/assets/logo.png" alt="" />
+            <h1 class="text-l font-bold">Donate Bangladesh</h1>
+          </div>
+          <div class="navbar-end gap-2">
+            <button id="total-balance" class="btn">
+              <img src="assets/coin.png" alt="" />5500 BDT
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-screen-xl mx-auto my-5 flex justify-center gap-10">
+        <button
+          style="background-color: greenyellow"
+          id="switch-donation"
+          class="btn btn-lg"
+        >
+          Donation
+        </button>
+        <button id="switch-history" class="btn btn-lg">History</button>
+      </section>
+    </nav>
+    <main id="main-id" class="max-w-screen-xl mx-auto">
+      <div class="flex bg-red-50 p-5 mb-5 rounded-md">
+        <div class="w-2/3">
+          <img class="w-5/6" src="assets/noakhali.png" alt="" />
+        </div>
+        <div class="w-2/3">
+          <button id="fund" class="btn">
+            <img src="assets/coin.png" alt="" /> 0 BDT
+          </button>
+          <h3 class="mt-6 font-bold">
+            Donate for flood at Noakhali,Bangladesh
+          </h3>
+          <p class="mt-6" style="color: darkslategray">
+            The recent floods in Noakhali have caused significant damage to
+            homes infrastructure. Your donation will help provide essential
+            supplies and to those affected by this disaster. Every contribution,
+            big or small, makes difference. Please join us in supporting the
+            relief efforts and making a positive impact on the lives of those in
+            need.
+          </p>
+          <input
+            id="donate-amount"
+            type="text"
+            placeholder="Write Donation Amount"
+            class="input input-bordered mt-6 w-full"
+            required
+          />
+          <div class="form-control mt-6">
+            <button id="donate-nhk" class="btn bg-lime-300">Donate</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex bg-red-50 p-5 mb-5 rounded-md">
+        <div class="w-2/3">
+          <img class="w-5/6" src="assets/feni.png" alt="" />
+        </div>
+        <div class="w-2/3">
+          <button id="fund-feni" class="btn">
+            <img src="assets/coin.png" alt="" /> 0 BDT
+          </button>
+          <h3 class="mt-6 font-bold">
+            Donate for Flood Relief in Feni,Bangladesh
+          </h3>
+          <p class="mt-6" style="color: darkslategray">
+            The recent floods in Feni have devastated local communities, leading
+            to severe disruption and loss. Your generous donation will help
+            provide immediate aid, including food, clean water, and medical
+            supplies, to those affected by this calamity. Together, we can offer
+            crucial support and help rebuild lives in the aftermath of this
+            disaster. Every contribution counts towards making a real
+            difference. Please consider donating today to assist those in urgent
+            need.
+          </p>
+          <input
+            id="input-feni"
+            type="text"
+            placeholder="Write Donation Amount"
+            class="input input-bordered mt-6 w-full"
+            required
+          />
+          <div class="form-control mt-6">
+            <button id="donate-feni" class="btn bg-lime-300">Donate</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex bg-red-50 p-5 mb-5 rounded-md">
+        <div class="w-2/3">
+          <img class="w-5/6" src="assets/quota-protest.png" alt="" />
+        </div>
+        <div class="w-2/3">
+          <button id="fund-quota" class="btn">
+            <img src="assets/coin.png" alt="" /> 0 BDT
+          </button>
+          <h3 class="mt-6 font-bold">Aid for Injured in the Quota Movement</h3>
+          <p class="mt-6" style="color: darkslategray">
+            The recent Quota movement has resulted in numerous injuries and
+            significant hardship for many individuals.s By contributing, you
+            help ensure that injured individuals receive the care and support
+            they need during this challenging time. Every donation plays a vital
+            role in alleviating their suffering and aiding in their recovery.
+            Please consider making a donation to support these brave individuals
+            in their time of need.
+          </p>
+          <input
+            id="input-quota"
+            type="text"
+            placeholder="Write Donation Amount"
+            class="input input-bordered mt-6 w-full"
+            required
+          />
+          <div class="form-control mt-6">
+            <button id="donate-quota" class="btn bg-lime-300">Donate</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section id="transaction-id" class="hidden m-5">
+      <div class="transaction mt-4">
+        <p>Dummy Commit</p>
+        <p>4th March,2022</p>
+      </div>
+    </section>
+    <script src="js/home.js"></script>
+    <script src="js/utilities.js"></script>
   </body>
 </html>

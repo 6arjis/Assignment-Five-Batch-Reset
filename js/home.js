@@ -5,24 +5,6 @@ document.getElementById('btn-switch-blog').addEventListener('click',()=>{
   window.location.href="blog.html";
 })
 
-//Modal Section start
-function modalPopup(id){
-  document.getElementById(id).addEventListener('click',()=>{
-    document.getElementById('modal-wrapper').classList.remove('hidden');
-  })
-  
-  document.getElementById(id).addEventListener('click',()=>{
-    document.getElementById('modal-wrapper').classList.remove('hidden');
-  })
-  document.getElementById(id).addEventListener('click',()=>{
-    document.getElementById('modal-wrapper').classList.remove('hidden');
-  })
-  
-  document.getElementById('close-modal-button').addEventListener('click',()=>{
-    document.getElementById('modal-wrapper').classList.add('hidden');
-  })
-}
-//Modal section end
 
 //Switch between donation and transaction start 
 document.getElementById('switch-history').addEventListener("click",()=>{

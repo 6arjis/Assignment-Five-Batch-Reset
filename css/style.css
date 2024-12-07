@@ -10,6 +10,11 @@
     padding: 10px;
     text-align: center;
 }
+#transaction-para{
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 5px;
+}
 .popup{
     width: 400px;
     background-color: aliceblue;
@@ -48,3 +53,17 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    #hide {
+      display: none;
+    }
+    #fund,#fund-feni,#fund-quota{
+      margin-top: 20px;
+    }
+    h3,p{
+        text-align: center;
+    }
+
+  }
+  

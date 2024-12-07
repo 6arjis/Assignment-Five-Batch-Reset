@@ -1,6 +1,10 @@
 
 let popup = document.getElementById('popup');
 
+document.getElementById('btn-switch-blog').addEventListener('click',()=>{
+  window.location.href="blog.html";
+})
+
 document.getElementById('switch-history').addEventListener("click",()=>{
     document.getElementById('switch-donation').style.backgroundColor="lightGrey"
     document.getElementById('switch-history').style.backgroundColor="greenYellow";
@@ -20,10 +24,14 @@ document.getElementById("donate-nhk").addEventListener("click", (event) => {
   event.preventDefault();
   const totalBalance = getTextFieldValueById("total-balance");
   const donateAmount = getInputValueById("donate-amount");
+  if(donateAmount < 0){
+    alert("Please enter a valid amount");
+    return;
+  }
   const fundBalance = getTextFieldValueById("fund");
 
-  if(totalBalance < donateAmount){
-    alert("Not Enough Money IN Your Account");
+  if(totalBalance < donateAmount ){
+    alert("Not Enough Money In Your Account");
     return;
   }
 
@@ -41,7 +49,7 @@ document.getElementById("donate-nhk").addEventListener("click", (event) => {
    <button id="total-balance" class="btn"><img src="assets/coin.png" alt="">${newBalance} BDT</button>
   `
   document.getElementById('fund').innerHTML = `
-   <button id="fund" class="btn"><img src="assets/coin.png" alt=""> ${newFund} BDT</button>
+   <button id="fund" class="btn "><img src="assets/coin.png" alt=""> ${newFund} BDT</button>
   `
   transactionUpdate(donateAmount,"Flood Relief-2024 in Noakhali,Bangladesh");
 
@@ -51,6 +59,11 @@ document.getElementById("donate-feni").addEventListener("click", (event) => {
   const totalBalance = getTextFieldValueById("total-balance");
   const donateAmount = getInputValueById("input-feni");
   const fundBalance = getTextFieldValueById("fund-feni");
+
+  if(donateAmount < 0){
+    alert("Please enter a valid amount");
+    return;
+  }
 
   if(totalBalance < donateAmount){
     alert("Not Enough Money IN Your Account");
@@ -81,6 +94,11 @@ document.getElementById("donate-quota").addEventListener("click", (event) => {
   const totalBalance = getTextFieldValueById("total-balance");
   const donateAmount = getInputValueById("input-quota");
   const fundBalance = getTextFieldValueById("fund-quota");
+
+  if(donateAmount < 0){
+    alert("Please enter a valid amount");
+    return;
+  }
 
   if(totalBalance < donateAmount){
     alert("Not Enough Money IN Your Account");

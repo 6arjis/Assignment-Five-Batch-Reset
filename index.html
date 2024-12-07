@@ -25,7 +25,7 @@
               Blog
             </button>
           </div>
-          <div class="navbar-center gap-3">
+          <div id="hide" class="navbar-center gap-3">
             <img src="assets/logo.png" alt="" />
             <h1 class="text-l font-bold">Donate Bangladesh</h1>
           </div>
@@ -48,11 +48,11 @@
       </section>
     </nav>
     <main id="main-id" class="max-w-screen-xl mx-auto">
-      <div class="flex bg-red-50 p-5 mb-5 rounded-md">
-        <div class="w-2/3">
-          <img class="w-5/6" src="assets/noakhali.png" alt="" />
+      <div class="lg:flex  bg-red-50 p-5 mb-5 rounded-md">
+        <div class="lg:w-2/3">
+          <img class="lg:w-5/6" src="assets/noakhali.png" alt="" />
         </div>
-        <div class="w-2/3">
+        <div class="lg:w-2/3">
           <button id="fund" class="btn">
             <img src="assets/coin.png" alt="" /> 0 BDT
           </button>
@@ -87,13 +87,13 @@
           </div>
         </div>
       </div>
-      <div class="flex bg-red-50 p-5 mb-5 rounded-md">
-        <div class="w-2/3">
-          <img class="w-5/6" src="assets/feni.png" alt="" />
+      <div class="lg:flex bg-red-50 p-5 mb-5 rounded-md">
+        <div class="lg:w-2/3">
+          <img class="lg:w-5/6" src="assets/feni.png" alt="" />
         </div>
-        <div class="w-2/3">
+        <div class="lg:w-2/3">
           <button id="fund-feni" class="btn">
-            <img src="assets/coin.png" alt="" /> 0 BDT
+            <img   src="assets/coin.png" alt="" /> 0 BDT
           </button>
           <h3 class="mt-6 font-bold">
             Donate for Flood Relief in Feni,Bangladesh
@@ -120,18 +120,19 @@
           </div>
         </div>
       </div>
-      <div class="flex bg-red-50 p-5 mb-5 rounded-md">
-        <div class="w-2/3">
-          <img class="w-5/6" src="assets/quota-protest.png" alt="" />
+      <div class="lg:flex bg-red-50 p-5 mb-5 rounded-md">
+        <div class="lg:w-2/3">
+          <img class="lg:w-5/6" src="assets/quota-protest.png" alt="" />
         </div>
-        <div class="w-2/3">
+        <div class="lg:w-2/3">
           <button id="fund-quota" class="btn">
-            <img src="assets/coin.png" alt="" /> 0 BDT
+            <img  src="assets/coin.png" alt="" /> 0 BDT
           </button>
           <h3 class="mt-6 font-bold">Aid for Injured in the Quota Movement</h3>
           <p class="mt-6" style="color: darkslategray">
             The recent Quota movement has resulted in numerous injuries and
-            significant hardship for many individuals.s By contributing, you
+            significant hardship for many individuals. Every donation plays a vital
+            role in alleviating their suffering and aiding in their recovery. By contributing, you
             help ensure that injured individuals receive the care and support
             they need during this challenging time. Every donation plays a vital
             role in alleviating their suffering and aiding in their recovery.
@@ -151,42 +152,10 @@
         </div>
       </div>
     </main>
-    <main id="faq" class="mb-6 m-5 hidden">
-        <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">What is the DOM, and why is it important for web development?</div>
-            <div class="collapse-content">
-              <p>The DOM (Document Object Model) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree of nodes, where each node represents an element, attribute, or text within the document. The DOM allows developers to manipulate the structure, style, and content of a web page dynamically using JavaScript. This is essential for creating interactive and dynamic web applications</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What is event handling in JavaScript, and how does it relate to the DOM?</div>
-            <div class="collapse-content">
-              <p>Event handling allows you to respond to user interactions with a web page, such as clicking buttons, typing in text boxes, or hovering over elements. In the DOM, you can attach event listeners to elements using methods like addEventListener. When an event occurs, the attached function will be executed.</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What is the purpose of the DOMContentLoaded event?</div>
-            <div class="collapse-content">
-              <p>The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, but before stylesheets, scripts, and images have finished loading. This is often used to execute JavaScript code as soon as possible, without waiting for all resources to load.   
-
-              </p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How can you change the content of an HTML element using JavaScript?</div>
-            <div class="collapse-content">
-              <p>You can use the textContent or innerHTML properties to change the content of an element.</p>
-            </div>
-          </div>
-    </main>
     <section id="transaction-id" class="hidden m-5">
-      <div class="transaction mt-4">
-        <p>Dummy Commit</p>
-        <p>4th March,2022</p>
+      <div class="transaction my-3">
+        <p class="font-bold">Dummy Transaction</p>
+        <p id="transaction-para">6th March,2022</p>
       </div>
     </section>
     <script src="js/home.js"></script>

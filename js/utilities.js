@@ -13,9 +13,10 @@ function getTextFieldValueById(id) {
 function transactionUpdate(amount,event) {
 const div = document.createElement('div');
 div.classList.add('transaction');
+div.classList.add('my-3');
 div.innerHTML = `
- <p><b> ${amount} has been donated for ${event} </b> </p>
- <p> ${new Date()} </p>
+ <p><b> ${amount}TK has been donated for ${event} </b> </p>
+ <p id="transaction-para"> ${new Date()} </p>
 `
 document.getElementById('transaction-id').appendChild(div);
 }

@@ -48,7 +48,7 @@
       </section>
     </nav>
     <main id="main-id" class="max-w-screen-xl mx-auto">
-      <div class="lg:flex  bg-red-50 p-5 mb-5 rounded-md">
+      <div class="lg:flex bg-red-50 p-5 mb-5 rounded-md">
         <div class="lg:w-2/3">
           <img class="lg:w-5/6" src="assets/noakhali.png" alt="" />
         </div>
@@ -76,14 +76,28 @@
           />
           <div class="form-control mt-6">
             <button id="donate-nhk" class="btn bg-lime-300">Donate</button>
-            <div id="popup" class="popup">
-                  <h2 class="">Congratulations!</h2>
-                  <img  src="assets/coin.png"  alt="">
-                  <p>You have successfully donated for mankind!</p>
-                  <div class="">
-                    <button onclick="closePopUp()" class="">Close</button>
-                  </div>
+            <div id="modal-wrapper" class="fixed z-10 inset-0 hidden">
+              <div
+                class="flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-75 transition-all"
+              >
+                <div
+                  class="flex flex-col items-center justify-between bg-white p-10 rounded w-2/3"
+                >
+                  <h3
+                    class="text-xl uppercase font-medium text-lime-400 tracking-wider"
+                  >
+                    Congratulations!
+                  </h3>
+                  <img class="mt-5" src="assets/coin.png" style="height: 40px; width: 40px;" alt="">
+                  <p class="my-8 text-lg text-gray-600">
+                    You have successfully donated for the mankind!
+                  </p>
+                  <button id="close-modal-button"
+                    class="bg-lime-400 text-white py-3 px-10 rounded"
+                  >Close</button>
                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -93,7 +107,7 @@
         </div>
         <div class="lg:w-2/3">
           <button id="fund-feni" class="btn">
-            <img   src="assets/coin.png" alt="" /> 0 BDT
+            <img src="assets/coin.png" alt="" /> 0 BDT
           </button>
           <h3 class="mt-6 font-bold">
             Donate for Flood Relief in Feni,Bangladesh
@@ -116,7 +130,7 @@
             required
           />
           <div class="form-control mt-6">
-            <button  id="donate-feni" class="btn bg-lime-300">Donate</button>
+            <button id="donate-feni" class="btn bg-lime-300">Donate</button>
           </div>
         </div>
       </div>
@@ -126,18 +140,18 @@
         </div>
         <div class="lg:w-2/3">
           <button id="fund-quota" class="btn">
-            <img  src="assets/coin.png" alt="" /> 0 BDT
+            <img src="assets/coin.png" alt="" /> 0 BDT
           </button>
           <h3 class="mt-6 font-bold">Aid for Injured in the Quota Movement</h3>
           <p class="mt-6" style="color: darkslategray">
             The recent Quota movement has resulted in numerous injuries and
-            significant hardship for many individuals. Every donation plays a vital
-            role in alleviating their suffering and aiding in their recovery. By contributing, you
-            help ensure that injured individuals receive the care and support
-            they need during this challenging time. Every donation plays a vital
-            role in alleviating their suffering and aiding in their recovery.
-            Please consider making a donation to support these brave individuals
-            in their time of need.
+            significant hardship for many individuals. Every donation plays a
+            vital role in alleviating their suffering and aiding in their
+            recovery. By contributing, you help ensure that injured individuals
+            receive the care and support they need during this challenging time.
+            Every donation plays a vital role in alleviating their suffering and
+            aiding in their recovery. Please consider making a donation to
+            support these brave individuals in their time of need.
           </p>
           <input
             id="input-quota"
@@ -147,7 +161,7 @@
             required
           />
           <div class="form-control mt-6">
-            <button  id="donate-quota" class="btn bg-lime-300">Donate</button>
+            <button id="donate-quota" class="btn bg-lime-300">Donate</button>
           </div>
         </div>
       </div>

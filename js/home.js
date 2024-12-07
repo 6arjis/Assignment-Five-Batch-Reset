@@ -4,9 +4,7 @@ let popup = document.getElementById('popup');
 document.getElementById('btn-switch-blog').addEventListener('click',()=>{
   window.location.href="blog.html";
 })
-document.getElementById('switch-home').addEventListener('click',()=>{
-  window.location.href="blog.html";
-})
+
 
 document.getElementById('switch-history').addEventListener("click",()=>{
     document.getElementById('switch-donation').style.backgroundColor="lightGrey"
